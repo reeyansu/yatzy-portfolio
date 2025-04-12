@@ -27,3 +27,5 @@ class Yatzy:
 
     def sixes(self):
         return self.dice.count(6) * 6
+def chance(self):
+    return sum(self.dice)

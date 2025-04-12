@@ -18,3 +18,7 @@ class TestYatzy(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+def test_chance(self):
+    game = Yatzy()
+    game.dice = [1, 2, 3, 4, 5]
+    self.assertEqual(game.chance(), 15)
