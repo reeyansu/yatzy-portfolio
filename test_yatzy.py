@@ -29,3 +29,4 @@ def test_three_of_a_kind(self):
 
     game.dice = [1, 2, 3, 4, 5]
     self.assertEqual(game.three_of_a_kind(), 0)
+
