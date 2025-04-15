@@ -22,3 +22,10 @@ def test_chance(self):
     game = Yatzy()
     game.dice = [1, 2, 3, 4, 5]
     self.assertEqual(game.chance(), 15)
+def test_three_of_a_kind(self):
+    game = Yatzy()
+    game.dice = [5, 5, 5, 2, 3]
+    self.assertEqual(game.three_of_a_kind(), 15)
+
+    game.dice = [1, 2, 3, 4, 5]
+    self.assertEqual(game.three_of_a_kind(), 0)

@@ -29,3 +29,8 @@ class Yatzy:
         return self.dice.count(6) * 6
 def chance(self):
     return sum(self.dice)
+def three_of_a_kind(self):
+    for i in set(self.dice):
+        if self.dice.count(i) >= 3:
+            return i * 3
+    return 0
